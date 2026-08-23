@@ -1,0 +1,142 @@
+body {
+  min-height: 100vh;
+  padding: 50px 16px 70px;
+}
+
+.box {
+  width: min(760px, 100%);
+  margin: 0 auto;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-md);
+  padding: clamp(26px, 5vw, 48px);
+  animation: box-in .5s cubic-bezier(.2, .7, .2, 1) both;
+}
+
+@keyframes box-in {
+  from {
+    opacity: 0;
+    transform: translateY(14px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.box>a.logo {
+  display: inline-flex;
+  font-family: var(--font-display);
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--navy);
+  margin-bottom: 26px;
+}
+
+.box h1 {
+  font-size: clamp(1.6rem, 3.4vw, 2rem);
+  margin-bottom: 22px;
+}
+
+.box h2 {
+  font-size: 1.1rem;
+  font-family: var(--font-body);
+  font-weight: 700;
+  margin: 26px 0 8px;
+}
+
+.box h2:first-of-type {
+  margin-top: 4px;
+}
+
+.box p {
+  color: var(--text-muted);
+  line-height: 1.7;
+}
+
+.box form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 6px;
+}
+
+.box input,
+.box textarea {
+  width: 100%;
+  padding: 13px 14px;
+  border: 1.5px solid var(--border);
+  border-radius: var(--radius-sm);
+  background: var(--bg);
+  color: var(--text);
+  font: 500 .94rem var(--font-body);
+  resize: vertical;
+  transition: border-color .2s ease, box-shadow .2s ease;
+}
+
+.box textarea {
+  min-height: 130px;
+}
+
+.box input:focus,
+.box textarea:focus {
+  outline: none;
+  border-color: var(--teal);
+  box-shadow: 0 0 0 3px var(--teal-light);
+}
+
+.box .btn {
+  align-self: flex-start;
+  margin-top: 4px;
+}
+
+.back {
+  display: inline-block;
+  margin-top: 26px;
+  color: var(--teal);
+  font-weight: 600;
+  font-size: .9rem;
+}
+
+.back:hover {
+  color: var(--amber-dark);
+}
+
+/* profile */
+.profile-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 14px 0;
+  border-bottom: 1px dashed var(--border);
+  font-size: .95rem;
+}
+
+.profile-row b {
+  color: var(--navy);
+}
+
+.profile-row span {
+  color: var(--text-muted);
+  font-family: var(--font-mono);
+  font-size: .88rem;
+}
+
+.profile-empty {
+  color: var(--text-muted);
+}
+
+.theme-toggle-corner {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+}
+
+.profile-logout {
+  margin-top: 22px;
+}
+
+.profile-login-link {
+  margin-top: 0;
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Create your account | Explore-W</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500;600&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="../css/theme.css">
+  <link rel="stylesheet" href="../css/auth.css">
+
+  <script src="../javascript/init.js"></script>
+</head>
+
+<body>
+  <div class="box">
+    <button class="theme-toggle theme-toggle-corner" id="themeToggle" aria-label="Toggle dark mode">☾</button>
+    <a class="logo" href="index.html">✈ Explore-W</a>
+    <h1>Create your account</h1>
+    <p>Sign up with a demo account, stored in your browser's LocalStorage.</p>
+    <form id="auth">
+      <input name="name" placeholder="Full name" required autocomplete="name">
+      <input name="phone" placeholder="Phone number" required autocomplete="tel">
+      <input name="email" type="email" placeholder="Email" required autocomplete="email">
+      <input name="password" type="password" placeholder="Password" required autocomplete="new-password">
+      <input name="confirm" type="password" placeholder="Confirm password" required autocomplete="new-password">
+      <button class="btn" type="submit">Create account</button>
+    </form>
+    <a class="back" href="login.html">Already have an account? Log in →</a>
+    <a class="back" href="index.html">← Back to home</a>
+    <p class="stub">EW · BOARDING · ACCESS</p>
+  </div>
+
+  <script src="../javascript/theme.js"></script>
+  <script src="../javascript/signup.js"></script>
+</body>
+
+</html>
