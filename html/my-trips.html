@@ -12,6 +12,7 @@
         rel="stylesheet">
     <link rel="stylesheet" href="../css/theme.css">
     <link rel="stylesheet" href="../css/results.css">
+    <link rel="stylesheet" href="../react-dist/explore-react.css">
 
     <script src="../javascript/init.js"></script>
 </head>
@@ -19,8 +20,11 @@
 <body>
     <header class="header">
         <div class="container nav"><a class="logo" href="index.html">✈ Explore-W</a>
+            <button class="menu" id="menu" aria-label="Open menu" aria-expanded="false">☰</button>
             <nav id="nav"><a href="flights.html">Flights</a><a href="hotels.html">Hotels</a><a
-                    href="packages.html">Packages</a></nav><button class="theme-toggle" id="themeToggle"
+                    href="trains.html">Trains</a><a href="buses.html">Buses</a><a href="cabs.html">Cabs</a><a
+                    href="packages.html">Packages</a><a href="my-trips.html">My Trips</a><a href="about.html">About</a><a href="contact.html">Contact</a><a class="login"
+                    href="login.html">Login</a></nav><button class="theme-toggle" id="themeToggle"
                 aria-label="Toggle dark mode">☾</button>
         </div>
     </header>
@@ -29,10 +33,13 @@
             <h1>My Trips</h1>
             <p>Your Explore-W bookings.</p>
         </div>
-        <div id="trips"></div>
+        <div id="react-trips">
+            <p class="empty">Loading your trips… If nothing appears, run <code>npm run build</code> or enable JavaScript.</p>
+        </div>
     </main>
+    <script src="../javascript/nav.js"></script>
     <script src="../javascript/theme.js"></script>
-    <script src="../javascript/my-trips.js"></script>
+    <script src="../react-dist/explore-react.js"></script>
 </body>
 
 </html>

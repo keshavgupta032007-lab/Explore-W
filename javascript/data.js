@@ -1,19 +1,19 @@
 window.travelData = {
     flights: [
-        { name: "Air India", code: "AI-101", from: "Dubai", to: "Delhi", depart: "08:00", arrive: "11:15", duration: "3h 15m", stops: "Non-stop", price: 35999, country: "India" },
+        { name: "Air India", code: "AI-101", from: "Dubai", to: "Delhi", depart: "08:00", arrive: "12:45", duration: "3h 15m", stops: "Non-stop", price: 35999, country: "India" },
         { name: "IndiGo", code: "6E-202", from: "Delhi", to: "Bengaluru", depart: "09:30", arrive: "11:40", duration: "2h 10m", stops: "Non-stop", price: 8999, country: "India" },
-        { name: "Emirates", code: "EK-511", from: "Dubai", to: "Australia", depart: "10:35", arrive: "12:55", duration: "3h 50m", stops: "Non-stop", price: 18999, country: "UAE" },
-        { name: "Singapore Airlines", code: "SQ-403", from: "Singapore", to: "Bali", depart: "21:55", arrive: "06:10", duration: "5h 45m", stops: "Non-stop", price: 28999, country: "Singapore" },
-        { name: "British Airways", code: "BA-142", from: "Delhi", to: "London", depart: "01:35", arrive: "07:20", duration: "9h 15m", stops: "Non-stop", price: 57999, country: "United Kingdom" },
+        { name: "Emirates", code: "EK-412", from: "Dubai", to: "Sydney", depart: "10:35", arrive: "07:25", duration: "13h 50m", stops: "Non-stop", price: 62999, country: "UAE" },
+        { name: "Singapore Airlines", code: "SQ-403", from: "Singapore", to: "Bali", depart: "21:55", arrive: "00:40", duration: "2h 45m", stops: "Non-stop", price: 28999, country: "Singapore" },
+        { name: "British Airways", code: "BA-142", from: "Delhi", to: "London", depart: "01:35", arrive: "06:20", duration: "9h 15m", stops: "Non-stop", price: 57999, country: "United Kingdom" },
         { name: "Air France", code: "AF-225", from: "Delhi", to: "Paris", depart: "00:35", arrive: "06:55", duration: "9h 50m", stops: "Non-stop", price: 61999, country: "France" },
         { name: "Lufthansa", code: "LH-761", from: "Delhi", to: "Frankfurt", depart: "02:50", arrive: "08:15", duration: "8h 55m", stops: "Non-stop", price: 55999, country: "Germany" },
-        { name: "Qatar Airways", code: "QR-571", from: "Dubai", to: "Paris", depart: "10:20", arrive: "11:55", duration: "4h 05m", stops: "Non-stop", price: 23999, country: "Qatar" },
-        { name: "Akasha Air", code: "AI-101", from: "Chandigarh", to: "Karnatak", depart: "08:00", arrive: "10:05", duration: "2h 05m", stops: "Non-stop", price: 5499, country: "India" },
-        { name: "Thai Airways", code: "TG-332", from: "Bangkok", to: "London", depart: "03:20", arrive: "09:10", duration: "4h 20m", stops: "Non-stop", price: 21999, country: "Thailand" },
+        { name: "Qatar Airways", code: "QR-571", from: "Dubai", to: "Paris", depart: "10:20", arrive: "15:25", duration: "7h 05m", stops: "Non-stop", price: 23999, country: "Qatar" },
+        { name: "Akasa Air", code: "QP-1301", from: "Chandigarh", to: "Bengaluru", depart: "08:00", arrive: "11:05", duration: "3h 05m", stops: "Non-stop", price: 5499, country: "India" },
+        { name: "Thai Airways", code: "TG-332", from: "Bangkok", to: "London", depart: "03:20", arrive: "09:10", duration: "11h 50m", stops: "Non-stop", price: 21999, country: "Thailand" },
         { name: "ANA", code: "NH-838", from: "Delhi", to: "Tokyo", depart: "18:00", arrive: "05:55", duration: "8h 25m", stops: "Non-stop", price: 48999, country: "Japan" },
         { name: "United Airlines", code: "UA-83", from: "Delhi", to: "New York", depart: "23:35", arrive: "06:10", duration: "16h 05m", stops: "Non-stop", price: 78999, country: "USA" },
-        { name: "Qantas", code: "QF-70", from: "Delhi", to: "Sydney", depart: "19:55", arrive: "13:10", duration: "12h 45m", stops: "1 stop", price: 69999, country: "Australia" },
-        { name: "IndiGo", code: "6E-202", from: "Delhi", to: "Dubai", depart: "09:30", arrive: "12:00", duration: "2h 30m", stops: "Non-stop", price: 89999, country: "India" }
+        { name: "Qantas", code: "QF-70", from: "Delhi", to: "Sydney", depart: "19:55", arrive: "14:10", duration: "12h 45m", stops: "1 stop", price: 69999, country: "Australia" },
+        { name: "IndiGo", code: "6E-1463", from: "Delhi", to: "Dubai", depart: "09:30", arrive: "12:00", duration: "3h 30m", stops: "Non-stop", price: 24999, country: "India" }
     ],
     hotels: [
         { name: "Atlantis The Palm", location: "Dubai, UAE", rating: 4.8, amenities: "Private Beach • Pool • Wi-Fi • Breakfast", price: 78999, country: "UAE" },
@@ -33,7 +33,7 @@ window.travelData = {
         { name: "TGV Lyria", code: "TGV-9213", from: "Paris", to: "Zurich", depart: "10:22", arrive: "14:26", duration: "4h 04m", class: "2nd Class", price: 8299, country: "France / Switzerland" },
         { name: "ICE", code: "ICE-1005", from: "Berlin", to: "Frankfurt", depart: "07:58", arrive: "11:59", duration: "4h 01m", class: "2nd Class", price: 5999, country: "Germany" },
         { name: "ÖBB Nightjet", code: "NJ-40233", from: "Vienna", to: "Rome", depart: "19:18", arrive: "09:10", duration: "13h 52m", class: "Couchette", price: 9999, country: "Austria / Italy" },
-        { name: "Shinkansen Nozomi", code: "N-215", from: "Tokyo", to: "Kyoto", depart: "09:00", arrive: "11:15", duration: "2h 15m", class: "Ordinary", price: 8499, country: "Japan" },
+        { name: "Shinkansen Nozomi", code: "N-215", from: "Tokyo", to: "Kyoto", depart: "09:00", arrive: "11:15", duration: "2h 15m", class: "Standard", price: 8499, country: "Japan" },
         { name: "SBB InterCity", code: "IC-81", from: "Zurich", to: "Interlaken", depart: "08:02", arrive: "09:58", duration: "1h 56m", class: "2nd Class", price: 4299, country: "Switzerland" },
         { name: "Frecciarossa", code: "FR-9519", from: "Rome", to: "Florence", depart: "10:10", arrive: "11:46", duration: "1h 36m", class: "Standard", price: 3999, country: "Italy" }
     ],
@@ -56,17 +56,5 @@ window.travelData = {
         { name: "Tokyo Airport Transfer", capacity: "4 passengers", from: "Haneda Airport", to: "Shinjuku", country: "Japan", price: 7499, time: "40 min" },
         { name: "New York Airport SUV", capacity: "6 passengers", from: "JFK Airport", to: "Manhattan", country: "USA", price: 8999, time: "55 min" },
         { name: "Sydney Airport Sedan", capacity: "4 passengers", from: "Sydney Airport", to: "Circular Quay", country: "Australia", price: 4599, time: "30 min" }
-    ],
-    packages: [
-        { name: "Dubai Explorer", location: "Dubai, UAE", duration: "4 Nights / 5 Days", details: "Hotel • Breakfast • Desert Safari • City Tour", price: 39999, country: "UAE" },
-        { name: "Singapore & Sentosa", location: "Singapore", duration: "5 Nights / 6 Days", details: "Hotel • Breakfast • Sentosa • Night Safari", price: 58999, country: "Singapore" },
-        { name: "Thailand Getaway", location: "Bangkok & Phuket, Thailand", duration: "6 Nights / 7 Days", details: "Hotels • Breakfast • Island Tour • Transfers", price: 49999, country: "Thailand" },
-        { name: "Paris Romance", location: "Paris, France", duration: "5 Nights / 6 Days", details: "Hotel • Breakfast • Seine Cruise • City Tour", price: 94999, country: "France" },
-        { name: "London Highlights", location: "London, UK", duration: "5 Nights / 6 Days", details: "Hotel • Breakfast • City Pass • Transfers", price: 99999, country: "United Kingdom" },
-        { name: "Japan Discovery", location: "Tokyo & Kyoto, Japan", duration: "7 Nights / 8 Days", details: "Hotels • Breakfast • Bullet Train • Tours", price: 139999, country: "Japan" },
-        { name: "Swiss Alps Escape", location: "Zurich & Interlaken, Switzerland", duration: "6 Nights / 7 Days", details: "Hotels • Breakfast • Rail Pass • Excursions", price: 149999, country: "Switzerland" },
-        { name: "Bali Tropical Escape", location: "Bali, Indonesia", duration: "5 Nights / 6 Days", details: "Resort • Breakfast • Temple Tour • Transfers", price: 52999, country: "Indonesia" },
-        { name: "New York City Break", location: "New York, USA", duration: "5 Nights / 6 Days", details: "Hotel • Breakfast • City Pass • Airport Transfer", price: 129999, country: "USA" },
-        { name: "Australia Explorer", location: "Sydney & Melbourne, Australia", duration: "8 Nights / 9 Days", details: "Hotels • Breakfast • City Tours • Transfers", price: 159999, country: "Australia" }
     ]
 };

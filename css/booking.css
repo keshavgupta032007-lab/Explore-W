@@ -349,7 +349,7 @@
     right: -30px;
   }
 }
-@media(max-width:850px) {
+@media(max-width:960px) {
   .nav-actions {
     margin-left: auto;
   }

@@ -1,0 +1,23 @@
+{
+  "name": "explore-w",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Explore-W travel website (HTML/CSS/JS) with React components mounted into most pages",
+  "scripts": {
+    "start": "node dev.mjs",
+    "dev": "node dev.mjs",
+    "build": "vite build",
+    "watch": "vite build --watch",
+    "format": "prettier --write \"react/**/*.{js,jsx,css}\""
+  },
+  "dependencies": {
+    "react": "18.3.1",
+    "react-dom": "18.3.1"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "4.3.4",
+    "prettier": "3.3.3",
+    "vite": "5.4.11"
+  }
+}

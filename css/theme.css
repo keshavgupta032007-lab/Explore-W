@@ -75,7 +75,7 @@ body {
   font-size: 16px;
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
-  transition: background.35s ease, color .35s ease;
+  transition: background .35s ease, color .35s ease;
 }
 
 a {

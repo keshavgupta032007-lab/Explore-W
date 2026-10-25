@@ -20,6 +20,7 @@
 }
 #nav a {
   font-size: .9rem;
+  white-space: nowrap;
   font-weight: 500;
   color: var(--text-muted);
 }
@@ -45,9 +46,15 @@
   color: var(--navy);
   cursor: pointer;
 }
-@media (max-width: 850px) {
+@media (min-width: 961px) and (max-width: 1100px) {
+  #nav {
+    gap: 16px;
+  }
+}
+@media (max-width: 960px) {
   .menu {
     display: block;
+    margin-left: auto;
   }
   #nav {
     display: none;

@@ -12,6 +12,7 @@
     rel="stylesheet">
   <link rel="stylesheet" href="../css/theme.css">
   <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../react-dist/explore-react.css">
 
 
   <script src="../javascript/init.js"></script>
@@ -30,6 +31,8 @@
         <a href="cabs.html">Cabs</a>
         <a href="packages.html">Packages</a>
         <a href="my-trips.html">My Trips</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
         <a class="nav-login" href="login.html">Login</a>
       </nav>
       <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">☾</button>
@@ -78,71 +81,73 @@
         </div>
         <a href="packages.html">View all packages →</a>
       </div>
-      <div class="destination-grid international-grid">
-        <a class="destination-card" href="packages.html"><img
-            src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&w=800&q=80"
-            alt="Dubai">
-          <div>
-            <h3>Dubai</h3>
-            <p>Skyline, desert & luxury</p><strong>Packages from ₹39,999</strong>
-          </div>
-        </a>
-        <a class="destination-card" href="packages.html"><img
-            src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?auto=format&fit=crop&w=800&q=80"
-            alt="Paris">
-          <div>
-            <h3>Paris</h3>
-            <p>Art, cafés & landmarks</p><strong>Packages from ₹94,999</strong>
-          </div>
-        </a>
-        <a class="destination-card" href="packages.html"><img
-            src="https://images.unsplash.com/photo-1525625293386-3f8f99389edd?auto=format&fit=crop&w=800&q=80"
-            alt="Singapore">
-          <div>
-            <h3>Singapore</h3>
-            <p>City lights & attractions</p><strong>Packages from ₹58,999</strong>
-          </div>
-        </a>
-        <a class="destination-card" href="packages.html"><img
-            src="https://images.unsplash.com/photo-1508009603885-50cf7c579365?auto=format&fit=crop&w=800&q=80"
-            alt="Bangkok">
-          <div>
-            <h3>Thailand</h3>
-            <p>Beaches, food & culture</p><strong>Packages from ₹49,999</strong>
-          </div>
-        </a>
-        <a class="destination-card" href="packages.html"><img
-            src="https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?auto=format&fit=crop&w=800&q=80"
-            alt="Tokyo">
-          <div>
-            <h3>Japan</h3>
-            <p>Tokyo, Kyoto & beyond</p><strong>Packages from ₹1,39,999</strong>
-          </div>
-        </a>
-        <a class="destination-card" href="packages.html"><img
-            src="https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?auto=format&fit=crop&w=800&q=80"
-            alt="London">
-          <div>
-            <h3>London</h3>
-            <p>History, culture & icons</p><strong>Packages from ₹99,999</strong>
-          </div>
-        </a>
-        <a class="destination-card" href="packages.html"><img
-            src="https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=800&q=80"
-            alt="Bali">
-          <div>
-            <h3>Bali</h3>
-            <p>Temples, beaches & resorts</p><strong>Packages from ₹52,999</strong>
-          </div>
-        </a>
-        <a class="destination-card" href="packages.html"><img
-            src="https://images.unsplash.com/photo-1523482580672-f109ba8cb9be?auto=format&fit=crop&w=800&q=80"
-            alt="Sydney">
-          <div>
-            <h3>Australia</h3>
-            <p>Sydney, Melbourne & coast</p><strong>Packages from ₹1,59,999</strong>
-          </div>
-        </a>
+      <div id="react-featured">
+        <div class="destination-grid international-grid">
+          <a class="destination-card" href="packages.html"><img
+              src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&w=800&q=80"
+              alt="Dubai">
+            <div>
+              <h3>Dubai</h3>
+              <p>Skyline, desert & luxury</p><strong>Packages from ₹39,999</strong>
+            </div>
+          </a>
+          <a class="destination-card" href="packages.html"><img
+              src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?auto=format&fit=crop&w=800&q=80"
+              alt="Paris">
+            <div>
+              <h3>Paris</h3>
+              <p>Art, cafés & landmarks</p><strong>Packages from ₹94,999</strong>
+            </div>
+          </a>
+          <a class="destination-card" href="packages.html"><img
+              src="https://images.unsplash.com/photo-1525625293386-3f8f99389edd?auto=format&fit=crop&w=800&q=80"
+              alt="Singapore">
+            <div>
+              <h3>Singapore</h3>
+              <p>City lights & attractions</p><strong>Packages from ₹58,999</strong>
+            </div>
+          </a>
+          <a class="destination-card" href="packages.html"><img
+              src="https://images.unsplash.com/photo-1508009603885-50cf7c579365?auto=format&fit=crop&w=800&q=80"
+              alt="Bangkok">
+            <div>
+              <h3>Thailand</h3>
+              <p>Beaches, food & culture</p><strong>Packages from ₹49,999</strong>
+            </div>
+          </a>
+          <a class="destination-card" href="packages.html"><img
+              src="https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?auto=format&fit=crop&w=800&q=80"
+              alt="Tokyo">
+            <div>
+              <h3>Japan</h3>
+              <p>Tokyo, Kyoto & beyond</p><strong>Packages from ₹1,39,999</strong>
+            </div>
+          </a>
+          <a class="destination-card" href="packages.html"><img
+              src="https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?auto=format&fit=crop&w=800&q=80"
+              alt="London">
+            <div>
+              <h3>London</h3>
+              <p>History, culture & icons</p><strong>Packages from ₹99,999</strong>
+            </div>
+          </a>
+          <a class="destination-card" href="packages.html"><img
+              src="https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=800&q=80"
+              alt="Bali">
+            <div>
+              <h3>Bali</h3>
+              <p>Temples, beaches & resorts</p><strong>Packages from ₹52,999</strong>
+            </div>
+          </a>
+          <a class="destination-card" href="packages.html"><img
+              src="https://images.unsplash.com/photo-1523482580672-f109ba8cb9be?auto=format&fit=crop&w=800&q=80"
+              alt="Sydney">
+            <div>
+              <h3>Australia</h3>
+              <p>Sydney, Melbourne & coast</p><strong>Packages from ₹1,59,999</strong>
+            </div>
+          </a>
+        </div>
       </div>
     </section>
 
@@ -265,8 +270,8 @@
           Trips</a>
       </div>
       <div>
-        <h4>Support</h4><a href="#">Help Center</a><a href="#">Cancellation</a><a href="#">Privacy Policy</a><a
-          href="#">Terms</a>
+        <h4>Support</h4><a href="contact.html">Help Center</a><a href="my-trips.html">Cancellation</a><a href="about.html">About</a><a
+          href="contact.html">Contact</a>
       </div>
     </div>
     <div class="container copyright">© 2026 Explore-W. All Rights Reserved.</div>
@@ -275,6 +280,7 @@
   <script src="../javascript/data.js"></script>
   <script src="../javascript/script.js"></script>
   <script src="../javascript/theme.js"></script>
+  <script src="../react-dist/explore-react.js"></script>
 </body>
 
 </html>

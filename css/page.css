@@ -3,6 +3,14 @@ body {
   padding: 50px 16px 70px;
 }
 
+body.has-nav {
+  padding: 0 0 70px;
+}
+
+.has-nav main.container {
+  padding-top: 40px;
+}
+
 .box {
   width: min(760px, 100%);
   margin: 0 auto;
@@ -104,7 +112,6 @@ body {
   color: var(--amber-dark);
 }
 
-/* profile */
 .profile-row {
   display: flex;
   justify-content: space-between;
@@ -139,4 +146,18 @@ body {
 
 .profile-login-link {
   margin-top: 0;
+}
+
+.stub {
+  margin-top: 28px;
+  padding-top: 16px;
+  border-top: 1px dashed var(--border);
+  text-align: center;
+  font: 600 .7rem var(--font-mono);
+  letter-spacing: .14em;
+  color: var(--text-muted);
+}
+
+.box .back + .back {
+  margin-left: 18px;
 }
